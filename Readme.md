@@ -20,7 +20,7 @@ code Salesforce
   - Check [Enable for Device Flow]
 - Open Heroku App and edit .env file
   - Update values
-- Build Webserver project
+- Build Webserver project using `lwc-services build -m development`
 - Run server `node ./src/server/_WEB.js`
 - Open **https://localhost:4001**
   - DO NOT USE 127.0.0.1
