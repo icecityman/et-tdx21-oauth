@@ -1,0 +1,72 @@
+{
+    "name": "my-app",
+    "description": "My amazing LWC app",
+    "version": "0.0.1",
+    "author": "Andres Perez",
+    "repository": "Andres Perez/my-app",
+    "bugs": "https://github.com/Andres Perez/my-app/issues",
+    "homepage": "https://github.com/Andres Perez/my-app",
+    "license": "MIT",
+    "keywords": [
+        "lwc"
+    ],
+    "lint-staged": {
+        "**/*.{css,html,js,json,md,ts,yaml,yml}": [
+            "prettier --write"
+        ],
+        "./src/**/*.js": [
+            "eslint"
+        ]
+    },
+    "nodemonConfig": {
+        "watch": [
+            "src/server/**/*.js"
+        ],
+        "ext": "js",
+        "ignore": [
+            "src/**/*.spec.js",
+            "src/**/*.test.js"
+        ],
+        "exec": "./build.sh"
+    },
+    "scripts": {
+        "ELTOROIT_DEBUG": "node inspect ./src/server/_WEB.js",
+        "ELTOROIT_SERVE": "node ./src/server/_WEB.js",
+        "ELTOROIT_HEROKU_DEBUG": "heroku local web=1,worker=1 --procfile='Procfile.debug'",
+        "ELTOROIT_HEROKU_SERVE": "heroku local web=1,worker=1",
+        "build:client": "lwc-services build -m development",
+        "build:client:development": "lwc-services build",
+        "lint": "eslint ./src/**/*.js",
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "serve": "run-p serve:client serve:api",
+        "serve:client": "node ./src/server/_WEB.js",
+        "test:unit": "lwc-services test:unit",
+        "test:unit:coverage": "lwc-services test:unit --coverage",
+        "test:unit:debug": "lwc-services test:unit --debug",
+        "test:unit:watch": "lwc-services test:unit --watch",
+        "watch": "run-p watch:client watch:server",
+        "watch:client": "lwc-services watch",
+        "watch:server": "nodemon"
+    },
+    "dependencies": {
+        "@lwc/synthetic-shadow": "2.2.4",
+        "@salesforce-ux/design-system": "2.15.8",
+        "cors": "2.8.5",
+        "dotenv": "10.0.0",
+        "ejs": "3.1.6",
+        "express": "4.17.1",
+        "lightning-base-components": "1.12.4-alpha"
+    },
+    "devDependencies": {
+        "eslint": "7.29.0",
+        "lint-staged": "11.0.0",
+        "lwc-services": "3.1.2",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.3.1"
+    },
+    "engines": {
+        "node": ">=14.16.0",
+        "npm": ">=7.7.6"
+    }
+}

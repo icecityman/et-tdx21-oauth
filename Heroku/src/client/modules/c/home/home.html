@@ -1,0 +1,77 @@
+<template>
+	<div class="slds-p-horizontal_x-small">
+		<lightning-layout horizontal-align="spread" multiple-rows style="height: 100vh">
+			<lightning-layout-item size="12">
+				<div class="slds-p-aroundxx-small">
+					<div class="slds-text-heading_large slds-align_absolute-center">Demystifying OAuth Flows in
+						Salesforce</div>
+					<div class="slds-text-heading_small slds-align_absolute-center">By @ELTOROIT</div>
+				</div>
+			</lightning-layout-item>
+			<lightning-layout-item size="12" style="height: 92%">
+				<div style="background-color: white; height: 100%">
+					<c-tabset default-tab="Who Am I?" variant="scoped"
+						style="width: 100%; height: 100%; display: inline-block">
+						<c-tab label="Who Am I?">
+							<div class="slds-align_absolute-center pageSize"
+								style="background-color: white; height: 100%">
+								<img src="/resources/bio.png" style="width: 100%; height: auto;" />
+							</div>
+						</c-tab>
+						<c-tab label="Settings">
+							<div class="pageSize">
+								<c-settings settings={settings} onsettingschange={onSettingsChanged}>
+									<div class="slds-align_absolute-center slds-text-heading_medium" style="color:red">
+										This should be
+										permanently changed in the<br /> .env file (localhost) or the Config Vars
+										(Heroku)</div>
+								</c-settings>
+							</div>
+						</c-tab>
+						<c-tab label="Web Server">
+							<div class="pageSize">
+								<c-web-server settings={settings} onresults={onResults}></c-web-server>
+							</div>
+						</c-tab>
+						<c-tab label="Username Password">
+							<div class="pageSize">
+								<c-username-password settings={settings} onresults={onResults}>
+								</c-username-password>
+							</div>
+						</c-tab>
+						<c-tab label="User Agent">
+							<div class="pageSize">
+								<c-user-agent settings={settings} onresults={onResults}></c-user-agent>
+							</div>
+						</c-tab>
+						<c-tab label="JWT Bearer">
+							<div class="pageSize">
+								<c-jwt settings={settings} onresults={onResults}></c-jwt>
+							</div>
+						</c-tab>
+						<c-tab label="Device">
+							<div class="pageSize">
+								<c-device settings={settings} onresults={onResults}></c-device>
+							</div>
+						</c-tab>
+						<c-tab label="Results">
+							<div class="pageSize">
+								<c-results settings={settings} oauth-data={OAuthData}></c-results>
+							</div>
+						</c-tab>
+						<c-tab label="Resources">
+							<div class="pageSize">
+								<ul>
+									<li><a href="https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm&type=0"
+											target="_blank">Documentation</a></li>
+									<li><a href="https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm&type=0"
+											target="_blank">Slides</a></li>
+								</ul>
+							</div>
+						</c-tab>
+					</c-tabset>
+				</div>
+			</lightning-layout-item>
+		</lightning-layout>
+	</div>
+</template>

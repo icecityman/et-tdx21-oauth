@@ -1,0 +1,35 @@
+<template>
+    <template if:true={oauthData.strData}>
+        <lightning-button label="Logout" variant="destructive" onclick={onLogoutClick}></lightning-button>
+        <br />
+    </template>
+    <c-tabset variant="vertical" default-tab="OAuth Response">
+        <template if:true={oauthData.strAccounts}>
+            <c-tab label="Accounts">
+                <pre>{oauthData.strAccounts}</pre>
+            </c-tab>
+        </template>
+        <template if:true={oauthData.strData}>
+            <c-tab label="Server&nbsp;Response">
+                <pre>{oauthData.strData}</pre>
+            </c-tab>
+        </template>
+        <template if:true={oauthData.strOpenID}>
+            <c-tab label="User (OpenID)">
+                <pre>{oauthData.strOpenID}</pre>
+            </c-tab>
+        </template>
+        <template if:true={oauthData.strUser}>
+            <c-tab label="User (Id)">
+                <pre>{oauthData.strUser}</pre>
+            </c-tab>
+        </template>
+        <template if:true={oauthData.strRefreshToken}>
+            <c-tab label="Refresh Token">
+                <pre>{oauthData.strRefreshToken}</pre>
+                <lightning-button label="Re-authorize Salesforce" variant="brand" onclick={onRefreshClick}>
+                </lightning-button>
+            </c-tab>
+        </template>
+    </c-tabset>
+</template>

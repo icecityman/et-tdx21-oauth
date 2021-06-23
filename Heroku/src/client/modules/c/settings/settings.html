@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-align_absolute-center">
+        <div class="slds-form">
+            <template for:each={list} for:item="input">
+                <lightning-input label={input.label} key={input.key} data-key={input.key} value={input.value}
+                    disabled={disabled} onchange={onValueChange} style="width:800px"></lightning-input>
+            </template>
+            <br />
+            <div class="slds-align_absolute-center">
+                <slot></slot>
+            </div>
+        </div>
+    </div>
+</template>

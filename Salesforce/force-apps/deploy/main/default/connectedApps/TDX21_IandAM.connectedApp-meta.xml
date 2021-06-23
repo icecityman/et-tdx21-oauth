@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>aperez@salesforce.com</contactEmail>
+    <label>TDX21: IandAM</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:4001/callback</callbackUrl>
+        <certificate>MIIDoDCCAogCCQCwg/5trDVZLTANBgkqhkiG9w0BAQsFADCBkTELMAkGA1UEBhMCQ0ExEDAOBgNVBAgMB09OVEFSSU8xEDAOBgNVBAcMB01BUktIQU0xEzARBgNVBAoMClNBTEVTRk9SQ0UxEDAOBgNVBAsMB1REWCAnMjExETAPBgNVBAMMCEVMVE9ST0lUMSQwIgYJKoZIhvcNAQkBFhVhcGVyZXpAc2FsZXNmb3JjZS5jb20wHhcNMjEwNTEyMjMxMDI4WhcNMjEwNjExMjMxMDI4WjCBkTELMAkGA1UEBhMCQ0ExEDAOBgNVBAgMB09OVEFSSU8xEDAOBgNVBAcMB01BUktIQU0xEzARBgNVBAoMClNBTEVTRk9SQ0UxEDAOBgNVBAsMB1REWCAnMjExETAPBgNVBAMMCEVMVE9ST0lUMSQwIgYJKoZIhvcNAQkBFhVhcGVyZXpAc2FsZXNmb3JjZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC6LwW30BDrXD3Skv5R6naNYjZaHEWqzoDTxfVzam0ySrkPtH/DlTJcm337dCPlLYJzcds+fAMeGtomKxbQAowaUq/dMW4IcBF0IPeg+2264cOWbx6xZ06pg86UCHD9QX9tFQYMAPTGO4jxXPOOFz0e/FCkguUuI5A7AG/SUaAi24UP75aS29fPl7DAyIA2nqhEOVrjH/J/LnFqH0fkftOqAitTnDwLFN8eGuKbWlCIkbuPxd4AUA5LVXjc+zGX4kya9dhRH5TZqGiEyDcXjoLupi+kW4GPHMAHYuLDjVvi5p/K3uH9JrpKgZFE58tXCqArnvxtRh/hvJuNXkzvhWQxAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAAw+6d3z6osOijFSseSnbqFK3nAfFdF9Wzfj6uhTG3g4BjbMc1/zcwOhQ3OzRS5kICbBTWTrzqm5aQmY1pqotbo4sYxnIZAypwY7R1EUjipMVNtyqZA/cVmNedh4UX7DzmlxNOpjjpd2kf0P4e+XYKWzhofJytBlRZJE2KJ/N09YFcB1K2t9env+KTrFL5L8Sd8rdoxFYwl1tja95Wfeotc7utx90aSCs3XEbtJlxLY7cuTsXesLFrqEFmr+jYgLv4h/O6deZTqJ8maBlNMtwLofBaWFkWzEqW2N5o0M6/me2lWNt1f/Ax0L2ElWu/LEy2fz9w33WBBLtZG/Cp6y5mo=</certificate>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>true</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
