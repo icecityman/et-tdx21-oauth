@@ -2,7 +2,7 @@
 
 ## Setup demo
 
-- Open both projects
+- Open both folders
 
 ```
 code Heroku

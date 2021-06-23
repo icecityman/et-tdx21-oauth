@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "Salesforce"
+		},
+		{
+			"path": "Heroku"
+		},
+		{
+			"path": "@Private"
+		},
+	],
+	"settings": {}
+}

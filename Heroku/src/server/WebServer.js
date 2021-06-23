@@ -158,7 +158,7 @@ module.exports = class WebServer {
             serverHTTPS.listen(this.config.HTTPS_PORT, () => {
                 // Keep this icon, so not doing a this.util.logInfo
                 console.log(
-                    `✅ HTTPS web server initialized: ${this.config.HTTPS_PORT}`
+                    `✅ HTTPS web server initialized: https://localhost:${this.config.HTTPS_PORT}/`
                 );
             });
         }
