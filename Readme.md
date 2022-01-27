@@ -1,16 +1,9 @@
 # TrailheaDX '21 - OAuth flows
 
-This repo is part of a session I did on Trailhead DX '21. That session can be found here:
+This repo is part of a session I did on Trailhead DX '21 named ["Demystifying OAuth Flows in Salesforce"](https://trailblazer.salesforce.com/myagenda?class=5864b3752c614270aea5823a07e356ac&eventId=a1Q4V000021f9sfUAA#/session/a2q4V000002BSXhQAO).
 
-There were 2 sessions (links below) which were basically the same but delivered twice in case attendees had a conflict.
+There is also a direct link to the second recording [here](https://play.vidyard.com/DUVaErx7xZh43UnYkGNCv6). 
 
-1. https://trailblazer.salesforce.com/myagenda?class=5864b3752c614270aea5823a07e356ac&eventId=a1Q4V000021f9sfUAA#/session/a2q4V000002BSXhQAO
-
-2. https://trailblazer.salesforce.com/myagenda?class=5864b3752c614270aea5823a07e356ac&eventId=a1Q4V000021f9sfUAA#/session/a2q4V000002BSXTQA4
-
-There is also a direct link to the second recording
-
-https://play.vidyard.com/DUVaErx7xZh43UnYkGNCv6
 ## Setup demo
 
 - Open both folders
