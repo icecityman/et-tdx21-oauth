@@ -1,8 +1,10 @@
 # TrailheaDX '21 - OAuth flows
 
+![How to select Salesforce oAuth flow?](https://github.com/eltoroit/et-tdx21-oauth/blob/master/HowToSelectOAuthFlow.png?raw=true "How to select Salesforce oAuth flow?")
+
 This repo is part of a session I did on Trailhead DX '21 named ["Demystifying OAuth Flows in Salesforce"](https://trailblazer.salesforce.com/myagenda?class=5864b3752c614270aea5823a07e356ac&eventId=a1Q4V000021f9sfUAA#/session/a2q4V000002BSXhQAO).
 
-There is also a direct link to the second recording [here](https://play.vidyard.com/DUVaErx7xZh43UnYkGNCv6). 
+There is also a direct link to the second recording [here](https://play.vidyard.com/DUVaErx7xZh43UnYkGNCv6).
 
 ## Setup demo
 
